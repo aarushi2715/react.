@@ -3,17 +3,22 @@ import { useState } from 'react'
 
 
 function App() {
+  //step1  setting the variable and the function 
   const [color, setColor] = useState("olive")
 
   return (
    <div className="w-full h-screen duration-200" 
    style={{backgroundColor: color}}>
     {/*inline css  always in double brackets  */ }
-    
+      {/*step 2 create the 2 divs, their classNames for tailwaind  and the style inline attribute for the background 
+      the background can also be written in the className just like all the other styling poperties */}
       <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
             <div 
             
             className="flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-xl">
+              {/*step 3 create the buttons in the div and its styling 
+              step 4 then insert the onClick function and create a callbak and pass the setColor function to it 
+              then add more buttons and functions  */}
               <button 
               onClick={()=>setColor("orange")}  // onlclick onl takes function so pass it as callbacks
               className="outline-none px-5 py-3 rounded-full text-white shadow-lg"
