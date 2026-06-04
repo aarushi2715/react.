@@ -1,6 +1,8 @@
-import { useState, useCallback, useEffect, useRef } from 'react'//use ref id used when we want to take reference, useCallback is for optimization and useEffect is for re rendeing 
+import { useState, useCallback, useEffect, useRef } from 'react'
+//use ref id used when we want to take reference, useCallback is for optimization and useEffect is for re rendeing 
 //usecallback memorises functions as mauch as it can it memorises the memory that's being rused or the thread ebing reused
 //useEffect runs when the page is called the first time 
+//we can take the reference of any element on the webpage using useRef and it has to be passed {line 51 and 12}
 
 function App() {
   const [length, setLength] = useState(8)
